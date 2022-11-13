@@ -1,0 +1,20 @@
+.footer {
+    background-color:  #e1dada;
+    border: 3px groove #82c7e1;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer .imag {
+    width: 100px;
+    height: 100px;
+}
