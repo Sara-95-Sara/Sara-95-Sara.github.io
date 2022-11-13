@@ -7,6 +7,8 @@
     <link rel = "stylesheet" href = "styles/reset.css">
     <link rel = "stylesheet" href = "styles/header.css">
     <link rel = "stylesheet" href = "styles/about.css">
+    <link rel = "stylesheet" href = "styles/contact.css">
+    <link rel = "stylesheet" href = "styles/form.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -27,6 +29,62 @@
             <p>Soy programador web desde hace más de 1 año. Con el tiempo me he ido adaptando y formando en nuevas tecnologías, y ahora quiero me convertir en freelance como Frontend o Backend o junior Full-Stack.
                Busco nuevos proyectos con los que seguir creciendo y aprendiendo y en los que pueda aportar mi experiencia y mi resolución.
             </p>
+        </div>
+    </section>
+    <section>
+        <div class = "skills" id = "skills">
+            
+        </div>
+    </section>
+    <section>
+        <div class = "contact" id = "contact">
+            <a href="#contact">Contact</a>
+            <form action="contact.html" class="form" method="post">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input required id="name" name="name" type="text" placeholder="Escribe tu nombre">
+                </div>
+                <div>
+                    <label for="lastname">Apellido</label>
+                    <input required id="lastname" name="lastname" type="text" placeholder="Escribe tu apellido">
+                </div>
+                <div>
+                    <label for="phone">Numero de TLF</label>
+                    <input required id="phone" name="phone" type="tel" placeholder="+34">
+                </div>
+                <div>
+                    <label for="username">Nombre Github</label>
+                    <input  id="username" name="username" type="text" pattern = "^@[^\s]+">
+                </div>
+                <br>
+                <div class="meet">
+                    <label for="meet">¿Como me conociste?</label>
+                    
+                    <input required id="university" name="meet" type="radio">
+                    <label for="university">University</label>
+
+                    <input required id="keepcoding" name="meet" type="radio">
+                    <label for="keepcoding">KeepCoding kick-off</label>
+
+                    <input required id="school" name="meet" type="radio">
+                    <label for="school">School</label>
+
+                    <input required id="github" name="meet" type="radio">
+                    <label for="github">Github</label>
+                </div>
+
+                <div>
+                    <label for="message">Tu mensaje</label>
+                    <br>
+                    <textarea required rows="3" id="message" placeholder="max 180 characters" maxlength="180">
+                    </textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </form>
         </div>
     </section>
 
